@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontdesign.css">
+</head>
+<body>
+    <div>
+    <h2 id="hd">Welcome to Yokiverse</h2>
+    <button id="btn">Enter to the universe</button>
+    </div>
+<script>
+    document.getElementById("btn").addEventListener("click", function(){
+        document.getElementById("hd").style.color = "red";
+        window.location.href="index.html";        
+      });
+</script>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yokiverse Portal</title>
+    <link rel="stylesheet" href="frontdesign.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2 id="hd">Welcome to Yokiverse</h2>
+        <button id="btn">Enter to the universe</button>
+    </div>
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            document.getElementById("hd").style.color = "blue";
+            
+            document.body.classList.add("animate");
+            setTimeout(function(){
+                window.location.href="index.html";
+            }, 1000); 
+        });
+    </script>
+</body>
+</html>

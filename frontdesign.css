@@ -1,0 +1,44 @@
+body {
+    font-family: 'Pacifico', cursive; /* add a funky font */
+    text-align: center;
+    height: 100vh; /* make the body full height */
+    background-color: #fff; /* light gray background */
+    display: flex; /* add flexbox to center content */
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+  }
+   
+  #btn {
+    background-color: blue; /* green background */
+    color: #fff; /* white text */
+    padding: 10px 20px; /* add some padding */
+    border: none; /* remove default border */
+    border-radius: 5px; /* add a slight curve */
+    cursor: pointer; /* change cursor on hover */
+    font-size: 16px; /* increase font size */
+    font-family: 'Pacifico', cursive; /* match font family */
+  }
+  
+  #btn:hover {
+    background-color: salmon ; /* darker green on hover */
+  }
+  
+  div {
+    background-color: #fff; /* white background */
+    padding: 20px;/* subtle shadow */
+    width: 300px; /* set a fixed width */
+    position: relative; /* for the loading animation */
+  /* light blue border */
+    animation: fadeIn 1s ease-in-out; /* add fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
